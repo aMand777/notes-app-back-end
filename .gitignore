@@ -3,4 +3,6 @@ node_modules
 package-lock.json
 .env
 .prod.env
+*.csv
+aMand7_accessKeys.csv
 src/api/uploads/file
