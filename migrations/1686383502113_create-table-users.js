@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 exports.shorthands = undefined;
 
 exports.up = (pgm) => {
@@ -10,14 +8,14 @@ exports.up = (pgm) => {
     },
     username: {
       type: 'VARCHAR(50)',
+      notNull: true,
+    },
+    email: {
+      type: 'TEXT',
       unique: true,
       notNull: true,
     },
     password: {
-      type: 'TEXT',
-      notNull: true,
-    },
-    fullname: {
       type: 'TEXT',
       notNull: true,
     },
